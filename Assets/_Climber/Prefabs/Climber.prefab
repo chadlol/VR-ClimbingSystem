@@ -57,6 +57,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -134,6 +135,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -517,33 +519,6 @@ MonoBehaviour:
   _headPoseRelativeOffsetRotation: {x: 0, y: 0, z: 0}
   _headPoseRelativeOffsetTranslation: {x: 0, y: 0, z: 0}
   profilerTcpPort: 32419
-  expandMixedRealityCapturePropertySheet: 0
-  enableMixedReality: 0
-  compositionMethod: 0
-  extraHiddenLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  externalCompositionBackdropColor: {r: 0, g: 0, b: 0, a: 0}
-  capturingCameraDevice: 0
-  flipCameraFrameHorizontally: 0
-  flipCameraFrameVertically: 0
-  handPoseStateLatency: 0
-  sandwichCompositionRenderLatency: 0
-  sandwichCompositionBufferedFrames: 8
-  chromaKeyColor: {r: 0, g: 1, b: 0, a: 1}
-  chromaKeySimilarity: 0.6
-  chromaKeySmoothRange: 0.03
-  chromaKeySpillRange: 0.06
-  useDynamicLighting: 0
-  depthQuality: 1
-  dynamicLightingSmoothFactor: 8
-  dynamicLightingDepthVariationClampingValue: 0.001
-  virtualGreenScreenType: 0
-  virtualGreenScreenTopY: 10
-  virtualGreenScreenBottomY: -10
-  virtualGreenScreenApplyDepthCulling: 0
-  virtualGreenScreenDepthTolerance: 0.2
-  mrcActivationMode: 0
   _trackingOriginType: 1
   usePositionTracking: 1
   useRotationTracking: 1
@@ -581,8 +556,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764a291722b168640823938db0b7d9a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: 45
-  sensitivity: 45
 --- !u!143 &2045839781
 CharacterController:
   m_ObjectHideFlags: 0
@@ -650,7 +623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   climber: {fileID: 2368333808933741346}
   controller: 1
-  delta: {x: 0, y: 0, z: 0}
+  contactPoints: []
 --- !u!135 &5259789585547832237
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -729,7 +702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   climber: {fileID: 2368333808933741346}
   controller: 2
-  delta: {x: 0, y: 0, z: 0}
+  contactPoints: []
 --- !u!135 &5259789585547836729
 SphereCollider:
   m_ObjectHideFlags: 0
